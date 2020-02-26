@@ -73,6 +73,13 @@ public class PictureTester
     redMotorcycle.mirrorHorizontalBotToTop();
     redMotorcycle.explore();
   }
+
+  public static void testMirrorDiagonal() {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.mirrorDiagonal();
+    beach.explore();
+  }
   
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
@@ -130,6 +137,7 @@ public class PictureTester
     //testGetAverageForColumn(0);
     // testMirrorVerticalRightToLeft();
     // testMirrorHorizontal();
-    testMirrorhorizontalBotToTop();
+    // testMirrorhorizontalBotToTop();
+    testMirrorDiagonal();
   }
 }
