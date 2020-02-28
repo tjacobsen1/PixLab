@@ -96,6 +96,13 @@ public class PictureTester
     gull.mirrorGull();
     gull.explore();
   }
+
+  public static void testNewCopy() {
+    Picture kitten = new Picture("kitten2.jpg");
+    Picture pic = new Picture("femaleLionAndHall.jpg");
+    pic.newCopy(kitten,50,50, 300, 300, 150, 150);
+    pic.explore();
+  }
   
   /** Method to test the collage method */
   public static void testCollage()
@@ -130,7 +137,7 @@ public class PictureTester
     //testMirrorVertical();
     // testMirrorTemple();
     // testMirrorArms();
-    testMirrorGull();
+    // testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
     //testCopy();
@@ -145,5 +152,6 @@ public class PictureTester
     // testMirrorVerticalRightToLeft();
     // testMirrorHorizontal();
     // testMirrorhorizontalBotToTop();
+    testNewCopy();
   }
 }
