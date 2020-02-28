@@ -119,6 +119,12 @@ public class PictureTester
     swan.edgeDetection(10);
     swan.explore();
   }
+
+  public static void testNewEdgeDetection() {
+    Picture uglypoopycat = new Picture("kitten2.jpg");
+    uglypoopycat.newEdgeDetection(10);
+    uglypoopycat.explore();
+  }
   
   /** Main method for testing.  Every class can have a main
     * method in Java */
@@ -152,6 +158,7 @@ public class PictureTester
     // testMirrorVerticalRightToLeft();
     // testMirrorHorizontal();
     // testMirrorhorizontalBotToTop();
-    testNewCopy();
+    // testNewCopy();
+    testNewEdgeDetection();
   }
 }
